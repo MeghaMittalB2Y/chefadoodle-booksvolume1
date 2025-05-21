@@ -4,7 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chef-a-Doodle: Volume 1 – Healthy Snacks</title>
+  
   <style>
+    #toc {
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  width: 220px;
+  background: #fffbea;
+  border: 2px solid #fbc02d;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  font-size: 0.9rem;
+  z-index: 1000;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+#toc details > summary {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  #toc {
+    position: static;
+    width: auto;
+    margin: 1rem auto;
+    font-size: 1rem;
+  }
+}
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
@@ -44,20 +76,10 @@
 <body>
 
 <section>
-  <nav id="toc" style="
-    background-color: #fff7dc;
-    border: 2px solid #ffc107;
-    border-radius: 12px;
-    padding: 1rem 1.5rem;
-    margin: 2rem auto;
-    max-width: 350px;
-    font-size: 1rem;
-    position: relative;
-    z-index: 1;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
-  ">
-    <strong>📚 Quick Navigation</strong>
-    <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+  <nav id="toc">
+  <details>
+    <summary>📚 Quick Navigation</summary>
+    <ul>
       <li><a href="#why">1. Why This Book?</a></li>
       <li><a href="#smart">2. What Makes a Snack Smart?</a></li>
       <li><a href="#wheel">3. The Wheel of Five</a></li>
@@ -72,7 +94,8 @@
       <li><a href="#sweet-snacks">🍓 Sweet Snacks</a></li>
       <li><a href="#closing">🎉 Closing Note</a></li>
     </ul>
-  </nav>
+  </details>
+</nav>
 </section>
 
 <header>
