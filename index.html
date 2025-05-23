@@ -10,7 +10,7 @@
   position: fixed;
   top: 80px;
   left: 20px;
-  width: 150px;
+  width: 145px;
   background: #fffbea;
   border: 2px solid #fbc02d;
   border-radius: 12px;
@@ -21,15 +21,15 @@
   overflow-y: auto;
   max-height: 80vh;
 }
- #toc ul {
-    list-style-position: inside;
-    padding-left: 0;
-    margin-left: 0.5rem;
-  }
+#toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
 
-  #toc ul li {
-    margin-left: 0.5rem;
-  }    
+#toc ul li {
+  margin-left: 0; 
+}
 
 #toc details > summary {
   font-weight: bold;
@@ -86,24 +86,31 @@
 
 <section>
   <nav id="toc">
-  <details>
-    <summary>📚 Quick Navigation</summary>
-    <ul>
-      <li><a href="#why">1. Why This Book?</a></li>
-      <li><a href="#smart">2. What Makes a Snack Smart?</a></li>
-      <li><a href="#wheel">3. The Wheel of Five</a></li>
-      <li><a href="#how">4. How to Use This Book</a></li>
-      <li><a href="#packing">5. Snack Packing Tips</a></li>
-      <li><a href="#moments">6. Snack Time Moments</a></li>
-      <li><a href="#sections">7. Recipe Sections</a></li>
-      <li><a href="#no-cook">🥗 No-Cook Snacks</a></li>
-      <li><a href="#bake-ahead">🧁 Bake-Ahead</a></li>
-      <li><a href="#dips">🥒 Dips & Dunkables</a></li>
-      <li><a href="#mini-meals">🥙 Mini Meals</a></li>
-      <li><a href="#sweet-snacks">🍓 Sweet Snacks</a></li>
-      <li><a href="#closing">🎉 Closing Note</a></li>
-    </ul>
-  </details>
+  <details open>
+  <summary>📚 Quick Navigation</summary>
+
+  <!-- Main Sections -->
+  <ul style="list-style: none; padding-left: 0; margin: 0;">
+    <li><a href="#why">1. Why This Book?</a></li>
+    <li><a href="#smart">2. What Makes a Snack Smart?</a></li>
+    <li><a href="#wheel">3. The Wheel of Five</a></li>
+    <li><a href="#how">4. How to Use This Book</a></li>
+    <li><a href="#packing">5. Snack Packing Tips</a></li>
+    <li><a href="#moments">6. Snack Time Moments</a></li>
+    <li><a href="#recipes">7. Recipe Sections</a></li>
+  </ul>
+
+  <!-- Recipe Categories -->
+  <ul style="list-style: none; padding-left: 0; margin: 0; margin-top: 0.5rem;">
+    <li><a href="#no-cook">8. 🥗 No-Cook Snacks</a></li>
+    <li><a href="#bake-ahead">9. 🧁 Bake-Ahead</a></li>
+    <li><a href="#dips">10. 🥒 Dips & Dunkables</a></li>
+    <li><a href="#mini-meals">11. 🥙 Mini Meals</a></li>
+    <li><a href="#sweet-snacks">12. 🍓 Sweet Snacks</a></li>
+    <li><a href="#closing">13. 🎉 Closing Note</a></li>
+  </ul>
+</details>
+
 </nav>
 </section>
 
